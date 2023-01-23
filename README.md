@@ -9,7 +9,7 @@ I Want Internet
 > :warning: :warning: :warning: **WARNING:** This project is no longer maintained; there may be bugs and issues. Feel free to fork this repository, pull requests *may* be accepted. :warning: :warning: :warning:
 
 **Oh no, internet out???** -
-Get `I WANT INTERNET`, we stress the fact that you want Internet:tm: and this irritation is a result of withdrawal. We strongly believe that Internet:tm: is not a need, rather, it is a want.
+Get `I WANT INTERNET`, we stress the fact that you want Internet™ and this irritation is a result of withdrawal. We strongly believe that Internet™ is not a need, rather, it is a want.
 
 **How to Download Snipe Chan?**
 1. Head over to [[Releases]](https://github.com/itsmarsss/I-WANT-INTERNET/releases) and look for the latest version
@@ -21,5 +21,5 @@ Get `I WANT INTERNET`, we stress the fact that you want Internet:tm: and this ir
 1. Click on `IWANTINTERNET.jar` as fast as you can
 2. Input an IP or web address, strictly without `https://` or `http://` (use the "bald" address; eg. `www.google.com`)
 3. Normally keep it as default (`8.8.8.8` / `google.com`) unless you know what you're doing.
-4. Check `Notify Me` so you get an annoying Windows notification when Internet:tm: connection is made
+4. Check `Notify Me` so you get an annoying Windows notification when Internet™ connection is made
 5. Right-click on Tray-Icon for options (Windows only - Default located at right side of taskbar in the upwards arrow)
