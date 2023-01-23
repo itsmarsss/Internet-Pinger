@@ -11,7 +11,7 @@ I Want Internet
 **Oh no, internet out???** -
 Get `I WANT INTERNET`, we stress the fact that you want Internet™ and this irritation is a result of withdrawal. We strongly believe that Internet™ is not a need, rather, it is a want.
 
-**How to Download Snipe Chan?**
+**How to Download `I WANT INTERNET`?**
 1. Head over to [[Releases]](https://github.com/itsmarsss/I-WANT-INTERNET/releases) and look for the latest version
 2. Download both `IWANTINTERNET.jar`
 
