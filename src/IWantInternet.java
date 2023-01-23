@@ -12,7 +12,7 @@ public class IWantInternet {
     private JPanel pnlPanel;
     private JScrollPane sclScroll;
     private boolean pingStatus = false;
-    private boolean notif = true;
+    boolean notif = true;
     private long pingCount = 1;
     private static ArrayList<String> logs = new ArrayList<>();
 
@@ -31,17 +31,20 @@ public class IWantInternet {
             @Override
             public void actionPerformed(ActionEvent e) {
                 notif = chkNotif.isSelected();
+                IWantInternetNow.pu.setNotify(chkNotif.isSelected());
             }
         });
     }
 
-    private void doClick() {
+    public void doClick() {
         if (pingStatus) {
             startPingingButton.setText("Start pinging");
+            IWantInternetNow.pu.setText("Start pinging");
             printLog("[ Stopped pinging... ]");
             pingStatus = false;
         } else {
             startPingingButton.setText("Stop pinging");
+            IWantInternetNow.pu.setText("Stop pinging");
             printLog("[ Started pinging... ]");
             pingStatus = true;
             Pinger pinger = new Pinger();
@@ -81,5 +84,9 @@ public class IWantInternet {
         logs.add(log);
         lstLogs.setListData(logs.toArray());
         lstLogs.ensureIndexIsVisible(logs.size()-1);
+    }
+
+    public void setNotify(boolean notif) {
+        chkNotif.setSelected(notif);
     }
 }
