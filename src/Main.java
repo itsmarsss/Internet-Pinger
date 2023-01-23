@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main {
-    public static void main(String args[]) throws AWTException {
+    public static void main(String[] args) throws AWTException {
         setLooksAndFeels();
         IWantInternetNow iwin = new IWantInternetNow();
         iwin.startInternetWatcher();

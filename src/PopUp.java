@@ -2,8 +2,8 @@ import java.awt.*;
 
 public class PopUp extends PopupMenu {
 
-    private CheckboxMenuItem notifyItem;
-    private MenuItem pingItem;
+    private final CheckboxMenuItem notifyItem;
+    private final MenuItem pingItem;
     public PopUp() {
         MenuItem openItem = new MenuItem("Open");
         MenuItem exitItem = new MenuItem("Exit");

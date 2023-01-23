@@ -1,7 +1,5 @@
 import java.awt.*;
-import java.io.IOException;
 import java.net.InetAddress;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -40,7 +38,7 @@ public class Pinger extends Thread {
             IWantInternetNow.iwi.printLog("Connection Found!!!");
             IWantInternetNow.iwi.stop();
             if (IWantInternetNow.iwi.getNotif()) {
-                IWantInternetNow.notification("INTERNET YAY", "GET ONLINE NOW HAHA", TrayIcon.MessageType.INFO);
+                IWantInternetNow.notification("INTERNET YAY", "GET ONLINE NOW", TrayIcon.MessageType.INFO);
             }
         } else {
             System.out.println("Not Connected");

@@ -6,9 +6,9 @@ import java.awt.event.ActionListener;
 public class IWantInternetNow {
 
     private static TrayIcon trayIcon;
-    public static IWantInternet iwi = new IWantInternet();
-    public static PopUp pu = new PopUp();
-    private Image icon = new ImageIcon(IWantInternetNow.class.getClassLoader().getResource("assets/icon.png")).getImage();
+    public static final IWantInternet iwi = new IWantInternet();
+    public static final PopUp pu = new PopUp();
+    private final Image icon = new ImageIcon(IWantInternetNow.class.getClassLoader().getResource("assets/icon.png")).getImage();
 
     public static JFrame frame;
 
@@ -24,13 +24,10 @@ public class IWantInternetNow {
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        trayIcon.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.setVisible(true);
-                frame.setAlwaysOnTop(true);
-                frame.setAlwaysOnTop(false);
-            }
+        trayIcon.addActionListener(e -> {
+            frame.setVisible(true);
+            frame.setAlwaysOnTop(true);
+            frame.setAlwaysOnTop(false);
         });
         //notification("HI", "Yo", TrayIcon.MessageType.ERROR);
     }

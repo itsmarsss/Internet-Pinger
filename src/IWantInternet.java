@@ -14,25 +14,17 @@ public class IWantInternet {
     private boolean pingStatus = false;
     boolean notif = true;
     private long pingCount = 1;
-    private static ArrayList<String> logs = new ArrayList<>();
+    private static final ArrayList<String> logs = new ArrayList<>();
 
     public IWantInternet() {
 
         sclScroll.getHorizontalScrollBar().setPreferredSize(new Dimension(10, 0));
         sclScroll.getVerticalScrollBar().setPreferredSize(new Dimension(10, 0));
 
-        startPingingButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                doClick();
-            }
-        });
-        chkNotif.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                notif = chkNotif.isSelected();
-                IWantInternetNow.pu.setNotify(chkNotif.isSelected());
-            }
+        startPingingButton.addActionListener(e -> doClick());
+        chkNotif.addActionListener(e -> {
+            notif = chkNotif.isSelected();
+            IWantInternetNow.pu.setNotify(chkNotif.isSelected());
         });
     }
 
