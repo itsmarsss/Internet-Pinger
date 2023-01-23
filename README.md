@@ -15,7 +15,7 @@ Get `I WANT INTERNET`, we stress the fact that you want Internet™ and this irr
 1. Head over to [[Releases]](https://github.com/itsmarsss/I-WANT-INTERNET/releases) and look for the latest version
 2. Download both `IWANTINTERNET.jar`
 
-**How to use Snipe Chan?**
+**How to use `I WANT INTERNET`?**
 
 *Make sure you have Java installed on your computer, safe source to [[download]](https://www.oracle.com/java/technologies/downloads/) Java*
 1. Click on `IWANTINTERNET.jar` as fast as you can
